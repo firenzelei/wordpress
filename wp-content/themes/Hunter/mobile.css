@@ -1,0 +1,65 @@
+/*  
+Style Name: Hunter移动端适配样式
+Author: LanerZhao
+Author URI: http://www.fitcat.xyz
+*/
+
+@media (max-width: 639px) {
+    .home-container {
+        padding: 0
+    }
+    .title-list,
+    .thumb-cont,
+    .loop-content {
+        padding: 0 15px
+    }
+    .post-list {
+        padding: 30px 0 10px 0;
+        border-bottom: none
+    }
+    .post-list:before {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        border-bottom: 12px solid #f1f1f1;
+        content: ''
+    }
+    .entry-meta2 {
+        padding-top: 5px;
+        margin: 15px 15px 0 15px;
+        border-top: 1px solid #eee
+    }
+    .post-list .entry-meta1 {
+        margin: 10px 10px;
+    }
+    .loop-content p {
+        max-height: 71px
+    }
+    #pagination {
+        margin: 0;
+        padding: 30px 0;
+        border-top: 12px solid #f1f1f1;
+        border-bottom: 12px solid #f1f1f1
+    }
+    .thumb-margin {
+        max-height: 220px;
+    }
+}
+
+@media (max-width: 539px) {
+    .post-list h2.title {
+        text-align: left
+    }
+    .entry-meta1 {
+        text-align: left;
+    }
+    .entry-meta1 span {
+        margin: 0 5px 0 0;
+    }
+}
+
+@media (max-width: 419px) {
+    .loop-content p {
+        max-height: 38px;
+    }
+}

@@ -1,0 +1,720 @@
+/*
+Theme Name: Integer
+Description: Used to style the TinyMCE editor.
+*/
+
+/**
+ * Normalize. Editor modifications.
+ */
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+
+	-webkit-text-size-adjust: 100%;
+	    -ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 3em 5%;
+	max-width: 648px;
+	background: #fff;
+	color: #222;
+	font-family: inherit;
+	line-height: 1.5;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+abbr[title],
+acronym {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+em,
+i {
+	font-style: italic;
+}
+
+mark,
+ins {
+	background-color: #e8e8e8;
+	color: #222;
+	text-decoration: none;
+}
+
+small {
+	font-size: 13.5px;
+	font-size: 0.75rem;
+}
+
+sub,
+sup {
+	position: relative;
+	vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 0 0 1.5em 0;
+}
+
+textarea {
+	margin: 0;
+	color: inherit;
+	font: inherit;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+/**
+ * Typography.
+ */
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	margin-top: 0;
+	margin-bottom: 1.25rem;
+	color: #1e1e1e;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.1;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 1.75em;
+}
+
+h2 {
+	font-weight: 800;
+	font-size: 1.75em;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+h4 {
+	font-weight: 800;
+	font-size: 1.125em;
+}
+
+h5 {
+	font-weight: 700;
+	font-size: 1.125em;
+}
+
+h6 {
+	font-weight: 400;
+	font-size: 1.125em;
+}
+
+/* Copy */
+
+p {
+	margin: 0 0 1.25em;
+}
+
+address {
+	margin: 0 0 1.25em;
+}
+
+big {
+	font-size: 1.25em;
+	line-height: 18px;
+	line-height: 1rem;
+}
+
+/* Links */
+
+a {
+	background-color: transparent;
+	color: #a7a7a7;
+	text-decoration: none;
+	-webkit-transition: all 0.1s ease-in-out;
+	        transition: all 0.1s ease-in-out;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+	color: #03a9f4;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: thin dotted;
+	outline-offset: -2px;
+}
+
+/* Blockquotes */
+
+blockquote {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	color: #1e1e1e;
+	quotes: '' '';
+	font-style: italic;
+	font-size: 1.5rem;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.125;
+}
+
+blockquote:before,
+blockquote:after {
+	content: '';
+}
+
+blockquote p {
+	margin: 0;
+}
+
+blockquote cite {
+	display: block;
+	margin: 0 0 -1.2em 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-style: normal;
+	font-size: 11.25px;
+	font-size: 0.625rem;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 27px;
+	line-height: 1.5rem;
+}
+
+/* Lists */
+
+ul,
+ol {
+	margin: 0 0 1.5em;
+	padding-left: 2.65em;
+}
+
+ul li,
+ol li {
+	margin-bottom: 0.75em;
+}
+
+ul li > ul,
+ul li > ol,
+ol li > ul,
+ol li > ol {
+	margin-top: 0.75em;
+	margin-bottom: 0;
+	padding-left: 1.25em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul,
+ol {
+	margin-top: 0.75em;
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 1.5em;
+}
+
+/* Tables. Editor modifications */
+
+.mce-item-table,
+.mce-item-table td,
+.mce-item-table th,
+.mce-item-table caption {
+	border: none;
+	border-spacing: 0;
+}
+
+.mce-item-table td,
+.mce-item-table th {
+	border-bottom: 1px solid;
+	border-bottom-color: #e8e8e8;
+}
+
+/* Tables */
+
+table {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 0;
+	width: 100%;
+}
+
+td,
+th {
+	padding: 0.75em;
+	border-bottom: 1px solid #e8e8e8;
+	text-align: left;
+}
+
+thead th {
+	padding: 1em;
+	background-color: #e8e8e8;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 13.5px;
+	font-size: 0.75rem;
+	line-height: 27px;
+	line-height: 1.5rem;
+}
+
+/* Code */
+
+pre {
+	overflow: auto;
+	padding: 1.5em;
+	max-width: 100%;
+	background-color: #1e1e1e;
+	color: #f0f0f0;
+	word-wrap: initial;
+	font-weight: bold;
+	font-family: Courier, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+}
+
+code,
+kbd,
+samp,
+tt,
+var {
+	padding: 3px 5px;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.05);
+	white-space: nowrap;
+	font-family: Courier, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+}
+
+/**
+ * Repeatable Patterns
+ */
+
+/* Images */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Lines */
+
+hr {
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+	margin-top: -2px;
+	margin-bottom: 1.5em;
+	height: 2px;
+	border: 0;
+	background-color: #e8e8e8;
+}
+
+/* Media. Editor modifications */
+
+.wpview-wrap .toolbar .dashicons {
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+}
+
+.wp-smiley {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	border: none;
+}
+
+embed,
+iframe,
+object,
+video {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+p > embed,
+p > iframe,
+p > object,
+p > video {
+	margin-bottom: 0;
+}
+
+.mejs-container {
+	margin: 0;
+}
+
+.wpview-wrap[data-wpview-type='playlist'],
+.wpview-wrap[data-wpview-type='audio'],
+.wpview-wrap[data-wpview-type='video'],
+.wpview-wrap[data-wpview-type='embedURL'] {
+	margin-bottom: 1.5em;
+	padding: 2px 2px 2px 2px;
+}
+
+.wpview-wrap[data-wpview-type='playlist'] iframe,
+.wpview-wrap[data-wpview-type='audio'] iframe,
+.wpview-wrap[data-wpview-type='video'] iframe,
+.wpview-wrap[data-wpview-type='embedURL'] iframe {
+	margin-bottom: 0;
+}
+
+.mce-content-body .mejs-time {
+	padding-top: 11px;
+}
+
+.mce-content-body .wp-playlist {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	border: none;
+	font-size: 18px;
+	font-size: 1rem;
+	line-height: 27px;
+	line-height: 1.5rem;
+}
+
+.mce-content-body .wp-playlist-tracks {
+	margin-top: 1.5em;
+}
+
+.mce-content-body .wp-playlist-light {
+	background-color: transparent;
+	color: #222;
+}
+
+.mce-content-body .wp-playlist-current-item {
+	margin-bottom: 1.5em;
+	height: 4.5em;
+}
+
+.mce-content-body .wp-playlist-current-item img {
+	margin-right: 1.5em;
+	max-width: 4.5em;
+}
+
+.mce-content-body .wp-playlist-item,
+.mce-content-body .wp-playlist-item-length {
+	padding: 0.63889em 0.75em 0.75em;
+}
+
+.mce-content-body .wp-playlist-item {
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.mce-content-body .wp-playlist-caption,
+.mce-content-body [class*='wp-playlist-item-'] {
+	text-transform: none;
+	font-style: normal;
+	font-size: 18px;
+	font-size: 1rem;
+	line-height: 27px;
+	line-height: 1.5rem;
+}
+
+.mce-content-body .wp-playlist-playing {
+	border-bottom: 1px solid;
+	border-bottom-color: #e8e8e8;
+	background-color: #e8e8e8;
+	font-weight: normal;
+}
+
+/* Captions. Editor modifications */
+
+.wp-caption {
+	margin-bottom: 0.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*='wp-image-'] {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.wp-caption .wp-caption-dd {
+	display: block;
+	margin: 1em 0;
+	padding: 0;
+	text-align: left;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 13.5px;
+	font-size: 0.75rem;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 2em;
+}
+
+/* Clearings */
+
+.clear:after,
+.gallery:after,
+.gallery-item:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+/**
+ * Content
+ */
+
+.mce-content-body {
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	        hyphens: auto;
+
+	    -ms-hyphens: auto;
+}
+
+/* Galleries */
+
+.entry-content .gallery {
+	margin: 2rem auto;
+	max-width: 100%;
+}
+
+#main .entry-content .tiled-gallery {
+	margin: 2rem auto;
+	max-width: 1440px;
+}
+
+.gallery-item {
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	border: 2px solid transparent;
+}
+
+.gallery-item img,
+.gallery-item a {
+	display: block;
+	margin-bottom: 0;
+}
+
+.gallery-columns-1 .gallery-item {
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	width: 33.33333%;
+}
+
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	width: 16.66667%;
+}
+
+.gallery-columns-7 .gallery-item {
+	width: 14.28571%;
+}
+
+.gallery-columns-8 .gallery-item {
+	width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	width: 11.11111%;
+}
+
+.gallery-columns-10 .gallery-item {
+	width: 10%;
+}
+
+.tiled-gallery-caption {
+	pointer-events: none;
+}
+
+.gallery-caption {
+	display: block;
+	overflow: hidden;
+	margin: 0.75em 0 2em;
+	height: 1.5em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 0.75em;
+}
+
+.gallery-columns-1 figure.gallery-item:nth-of-type(1n+1),
+.gallery-columns-2 figure.gallery-item:nth-of-type(2n+1),
+.gallery-columns-3 figure.gallery-item:nth-of-type(3n+1) {
+	clear: left;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption,
+.gallery-columns-10 .gallery-caption {
+	display: none;
+}
+
+/* Galleries. Editor modification */
+
+.wpview-wrap[data-wpview-type='gallery'] {
+	display: inline-block;
+	margin-bottom: 1.5em;
+	width: auto;
+}
+
+.gallery {
+	margin: 0;
+	padding: 0;
+}
+
+.gallery .gallery-item {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0;
+	text-align: left;
+	line-height: 1.5;
+}
+
+.gallery .gallery-caption {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	font-size: 12px;
+}
+
+.gallery:after:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		margin: 3em auto;
+	}
+
+	h1 {
+		font-size: 2.125em;
+	}
+}
+
+@media (min-width: 768px) {
+	blockquote {
+		margin: 3rem;
+	}
+
+	.entry-content .gallery {
+		margin: 3.5rem auto;
+	}
+
+	#main .entry-content .tiled-gallery {
+		margin: 3.5rem auto;
+	}
+}
+
+@media (min-width: 1024px) {
+	blockquote {
+		font-size: 2.125rem;
+	}
+}

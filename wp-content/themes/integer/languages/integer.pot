@@ -1,0 +1,210 @@
+# Copyright (C) 2017 Integer
+# This file is distributed under the same license as the Integer package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Integer\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:22
+msgid "Looks like the page you are looking for has been moved or does not exist. Click on the site logo to go to the homepage or try searching."
+msgstr ""
+
+#: comments.php:29
+msgid "One Reply"
+msgstr ""
+
+#: comments.php:34
+msgctxt "comments title"
+msgid "%1$s Reply"
+msgid_plural "%1$s Replies"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:61
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:68
+msgid "Reply to %s"
+msgstr ""
+
+#: comments.php:69
+msgid "Cancel"
+msgstr ""
+
+#: functions.php:63
+msgid "Primary"
+msgstr ""
+
+#: functions.php:64
+msgid "Footer"
+msgstr ""
+
+#: functions.php:117
+msgid "Footer #1"
+msgstr ""
+
+#: functions.php:126
+msgid "Footer #2"
+msgstr ""
+
+#: functions.php:135
+msgid "Before Post Content"
+msgstr ""
+
+#: functions.php:144
+msgid "After Post Content"
+msgstr ""
+
+#: functions.php:171
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:216, header.php:41
+msgid "Menu"
+msgstr ""
+
+#: functions.php:217
+msgid "Close"
+msgstr ""
+
+#: functions.php:218
+msgid "Expand child menu"
+msgstr ""
+
+#: functions.php:219
+msgid "Collapse child menu"
+msgstr ""
+
+#: header.php:20
+msgid "Skip to content"
+msgstr ""
+
+#: search.php:20
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/customizer.php:28
+msgid "Extra Features"
+msgstr ""
+
+#: inc/customizer.php:30
+msgid "Like Integer? Then check out the Pro version! It has some extra features to help you level-up your blog."
+msgstr ""
+
+#: inc/customizer.php:38
+msgid "1. Custom Colors"
+msgstr ""
+
+#: inc/customizer.php:41
+msgid "Pro version allows you to set your own colors for text, headings, links, and background."
+msgstr ""
+
+#: inc/customizer.php:51
+msgid "2. Two-column Layout"
+msgstr ""
+
+#: inc/customizer.php:54
+msgid "With the pro version, you can set the blog layout to display posts in a two-column grid."
+msgstr ""
+
+#: inc/customizer.php:64
+msgid "3. Custom Footer Message"
+msgstr ""
+
+#: inc/customizer.php:67
+msgid "With Integer Pro, you can set your own footer message."
+msgstr ""
+
+#: inc/customizer.php:69
+msgid "Learn More"
+msgstr ""
+
+#: inc/extras.php:79
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: inc/jetpack.php:45
+msgid "Load More"
+msgstr ""
+
+#: inc/template-tags.php:153
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:154
+msgid "One Comment"
+msgstr ""
+
+#: inc/template-tags.php:155
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:207
+msgid "Published by %s"
+msgstr ""
+
+#: inc/template-tags.php:217
+msgid "Visit website"
+msgstr ""
+
+#: inc/template-tags.php:337
+msgid "Older Post"
+msgstr ""
+
+#: inc/template-tags.php:338
+msgid "Newer Post"
+msgstr ""
+
+#: inc/template-tags.php:358
+msgid "Comment navigation"
+msgstr ""
+
+#: inc/template-tags.php:360
+msgid "Older Comments"
+msgstr ""
+
+#: inc/template-tags.php:361
+msgid "Newer Comments"
+msgstr ""
+
+#: inc/template-tags.php:382
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/template-tags.php:395
+msgid "%1$s theme by %2$s"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:26
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:32
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:26, template-parts/content-single.php:30, template-parts/content.php:31
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:26
+msgid "Continue reading %s"
+msgstr ""

@@ -1,0 +1,85 @@
+/*  
+Style Name: Hunter主题自适应代码
+Author: LanerZhao
+Author URI: http://www.fitcat.xyz
+*/
+
+@media (max-width: 639px) {
+    #archive {
+        margin-top: 5px;
+    }
+    .thumb-cont {
+        position: absolute;
+        left: -20px;
+        clip: rect(0 150px 100px 20px);
+        margin-top: -28px;
+        width: 150px;
+        height: 100px;
+        background: #999
+    }
+    .thumb-cont:after {
+        margin-left: 47px;
+        color: #CACACA;
+        content: "暂无缩略图";
+        line-height: 100px
+    }
+    .thumb-cont img {
+        margin: 0;
+        width: auto;
+        height: 100px;
+        -webkit-border-radius: 0;
+        border-radius: 0
+    }
+    .thumb-margin {
+        margin: 0;
+    }
+    .post-list {
+        padding: 10px 0 11px 145px;
+    }
+    .entry-meta1,
+    .entry-meta2 {
+        display: none;
+    }
+    .post-list h2.title {
+        text-align: left
+    }
+    .loop-content p {
+        height: 71px;
+    }
+}
+
+@media (max-width: 539px) {
+    .post-list {
+        padding: 20px 0 21px 115px;
+    }
+    .thumb-cont {
+        left: -50px;
+        clip: rect(0 150px 100px 50px)
+    }
+    .thumb-cont:after {
+        margin-left: 62.5px;
+    }
+}
+
+@media (max-width: 419px) {
+    .thumb-cont img {
+        min-width: 110px;
+        height: 60px;
+    }
+    .post-list {
+        padding: 20px 0 21px 95px;
+    }
+    .thumb-cont {
+        left: -30px;
+        margin-top: -21px;
+        clip: rect(0 110px 60px 30px)
+    }
+    .thumb-cont:after {
+        margin-left: 39.5px;
+        line-height: 60px;
+        font-size: 12px;
+    }
+    .loop-content p {
+        height: 38px;
+    }
+}
